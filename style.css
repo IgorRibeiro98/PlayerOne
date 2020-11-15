@@ -1,0 +1,36 @@
+body, html{
+    margin:0;
+    font: 16px "Lato", sans-serif;    
+    height: 100%;
+    
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5{
+    position: relative;
+    height: 100%;
+    /*opacity: 0.7;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.caixa1{
+    background-image: url(https://warpzone.me/wp-content/uploads/2018/07/Red-Dead-Redemption-2-Wallpaper-Full-HD-KeyArt-1920x1080.jpg);
+
+}
+
+.caixa2{
+    background-image: url(https://p4game.ir/wp-content/uploads/2020/06/The-Last-of-Us-Part-2-wallpaper-p4game.jpg);
+}
+
+.caixa3{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/368/918/351/the-game-scorpio-fighter-art-mortal-kombat-hd-wallpaper-preview.jpg);
+}
+
+.caixa4{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/686/796/9/devil-may-cry-5-dante-devil-may-cry-devil-may-cry-nero-devil-may-cry-wallpaper-preview.jpg);
+}
+
+.caixa5{
+    background-image: url(https://c.wallhere.com/photos/c0/b9/God_of_War_God_of_War_2018_Kratos-1323881.jpg!d);
+}

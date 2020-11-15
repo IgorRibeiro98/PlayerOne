@@ -1,50 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Games</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7a83b90a68.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
-        <a class="navbar-brand text-light"  href="#"><i class="fas fa-headset "></i></a>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Navbar -->
+            <div class="row">
+                <div class="col p-0">
+                    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed">
+                        <a class="navbar-brand text-light"  href="#"><i class="fas fa-headset "></i></a>
+                        <h3 class="text-center text-light">Player One</h3>
+                
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a href="" class="nav-link text-light">Inicio</a>
+                            </li>
+                
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light">Sobre Nós</a>
+                            </li>
+                
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control" placeholder="Que jogo voce procura?">
+                            <button type="submit" class="btn btn-light"><i class="fas fa-search"></i></button>
+                        </form>
+                    </nav>
 
-        <h3 class="text-center text-light">Player One</h3>
+                </div>
+    
+            </div>
+    
+            <!-- Sidebar - Content -->
+            <div class="row">
 
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-                <a href="" class="nav-link text-light">Inicio</a>
-            </li>
+                <!-- Sidebar -->
+                <div class="col-2 bg-dark text-light">
+                    <ul>
+                        <li> 
+                            Teste
+                        </li>
+                        <li>
+                            Teste1
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Content -->
+                <div class="col bg-warning">
+                    Content
+                </div>
+            </div>
+        </div>
 
-            <li class="nav-item">
-                <a href="" class="nav-link text-light">Sobre Nós</a>
-            </li>
 
-            <li class="nav-item">
-                <a href="" class="nav-link text-light">Contato</a>
-            </li>
-        </ul>
-        <form class="form-inline">
-            <input type="text" class="form-control" placeholder="Que jogo voce procura?">
-            <button type="submit" class="btn btn-light"><i class="fas fa-search"></i></button>
-        </form>
-    </nav>
-
-    <div class="caixa1">
     </div>
-    <div class="caixa2">
-	</div>
-	<div class="caixa3">
-	</div>
-	<div class="caixa4">
-    </div>
-    <div class="caixa5">
-	</div>
 </body>
 </html>

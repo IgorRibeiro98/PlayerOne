@@ -12,6 +12,27 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="position-absolute">
+        <div class="brand">SEU LOGO AQUI</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      
+            <div class="menu-list">
+      
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li>
+                      <a href="#"><i class="fa fa-tachometer-alt sidebar-icon"></i> Dashboard</a>
+                    </li>
+                    
+                    <li  data-toggle="collapse" data-target="#ajuda" class="collapsed">
+                        <a href="#"><i class="fa fa-life-ring sidebar-icon"></i> Ajuda <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="ajuda">
+                        <li><a id="documentacao" href="#"><i class="fa fa-angle-right"></i> Documentação</a></li>
+                        <li><a  id="suporte" href="#"><i class="fa fa-angle-right"></i> Suporte <small><i class="fa fa-external-link"></i></small></a></li>
+                    </ul>
+                </ul>
+         </div>
+    </div>
     <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
         <a class="navbar-brand text-light"  href="#"><i class="fas fa-headset "></i></a>
 

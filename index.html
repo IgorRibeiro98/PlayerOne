@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <script src="https://kit.fontawesome.com/7a83b90a68.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <script src = " https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js ">  </script>
 </head>
-<body class="grad">
+<body class="grad" onload="axiosStart()">
 
     <div class="wrapper">
         <div class="container-fluid">
@@ -234,6 +235,29 @@
     </div>
     <footer class="opac text-center mt-3 pb-0 mb-0 text-light">Todos os direitos reservados &copy;</footer>
 </body>
+<script>
+    async function axiosStart(){
+        let ax = '';
+       
+        
+        await axios.post("https://api.igdb.com/v4/games", {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Client-ID": "geon7arhgtux9oa4lcrhtbv9ocvexx",
+                "Authorization": "Bearer bgo03b9zyv05kwibpoenu7hwogi9wv",
+                "mode": "no-cors"
+            },
+            body: "fields *;"
+       }).then((resp)=>{
+        ax = resp
+       }).catch((err) => {
+           console.log(err)
+       })
+
+       console.log(ax)
+       
+    }
+</script>
 <style>
     .opac{
         background-color: black;

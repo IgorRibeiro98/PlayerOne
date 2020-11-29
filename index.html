@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/7a83b90a68.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script src = " https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js ">  </script>
+    <script src="script.js"></script>
 </head>
 <body class="grad" onload="axiosStart()">
 
@@ -66,91 +67,21 @@
                             </li>
                         </ul>
                     </nav>
-
                 </div>
                
     
                 <!-- Content -->
                 <div class="col-10 pt-2">
-                   <div class="row">
-                       <div class="col d-flex justify-content-between">
-
-                           <div class="card bg-dark" style="width: 18rem;">
-                               <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                               <div class="text-center card-body p-2">
-                                 <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                               </div>
-                           </div>
-       
-                           <div class="card bg-dark" style="width: 18rem;">
-                               <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                               <div class="text-center card-body p-2">
-                                 <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                               </div>
-                           </div>
-       
-                           <div class="card bg-dark" style="width: 18rem;">
-                               <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                               <div class="text-center card-body p-2">
-                                 <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                               </div>
-                           </div>
-       
-                           <div class="card bg-dark" style="width: 18rem;">
-                               <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                               <div class="text-center card-body p-2">
-                                 <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                               </div>
-                           </div>
-       
-                           <div class="card bg-dark" style="width: 18rem;">
-                               <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                               <div class="text-center card-body p-2">
-                                 <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-
-                    <div class="row mt-5">
-                        <div class="col d-flex justify-content-between">
-
-                            <div class="card bg-dark" style="width: 18rem;">
-                                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                                <div class="text-center card-body p-2">
-                                <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                                </div>
+                    <div id="rowCard" class="row">
+                    </div>           
+                </div>
+                    <!-- <div class="col d-flex justify-content-between">
+                        <div class="card bg-dark" style="width: 18rem;">
+                            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
+                            <div class="text-center card-body p-2">
+                            <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
                             </div>
-    
-                            <div class="card bg-dark" style="width: 18rem;">
-                                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                                <div class="text-center card-body p-2">
-                                <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                                </div>
-                            </div>
-    
-                            <div class="card bg-dark" style="width: 18rem;">
-                                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                                <div class="text-center card-body p-2">
-                                <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                                </div>
-                            </div>
-    
-                            <div class="card bg-dark" style="width: 18rem;">
-                                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                                <div class="text-center card-body p-2">
-                                <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                                </div>
-                            </div>
-    
-                            <div class="card bg-dark" style="width: 18rem;">
-                                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg" alt="Card image cap">
-                                <div class="text-center card-body p-2 text-center">
-                                <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#dmc">Saiba mais sobre Devil May Cry 5</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>  -->
 
                     <!-- <div class="row">
                         <div class="p-0 col-5 bg-primary ml-3" style="height:25rem;">
@@ -233,18 +164,17 @@
             
         </div>
     </div>
-    <footer class="opac text-center mt-3 pb-0 mb-0 text-light">Todos os direitos reservados &copy;</footer>
+    <footer class="opac text-center mt-3 pb-0 mb-0 text-light fixed-bottom">Todos os direitos reservados &copy;</footer>
 </body>
 <script>
     async function axiosStart(){
         let ax = '';
        
         
-        await axios.post("https://api.igdb.com/v4/games", {
+        await axios.get("http://localhost/api-games/public/index.php/api/v1/games/lista", {
             headers: {
                 "Access-Control-Allow-Origin": "*",
-                "Client-ID": "geon7arhgtux9oa4lcrhtbv9ocvexx",
-                "Authorization": "Bearer bgo03b9zyv05kwibpoenu7hwogi9wv",
+                "X-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibm9tZSI6Iklnb3IgUmliZWlybyIsImVtYWlsIjoiaWdvci5yaWJlaXJvOThAb3V0bG9vay5jb20iLCJzZW5oYSI6ImUxMGFkYzM5NDliYTU5YWJiZTU2ZTA1N2YyMGY4ODNlIn0.kUmvNUCxwMSgO4Oyt40k9VVvem6fU_xFFq7obw15Ndk",
                 "mode": "no-cors"
             },
             body: "fields *;"
@@ -255,10 +185,17 @@
        })
 
        console.log(ax)
+
+       criaCard(ax.data)
        
     }
 </script>
 <style>
+
+    .tamanhoCard{
+        width: 18rem;
+        margin-bottom: 15px;
+    }
     .opac{
         background-color: black;
     }
@@ -271,7 +208,25 @@
     }
     .grad {
   background-color: #808080;
+
+    }
+    .btn-custom{
+    color: white;
+	/* border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase; */
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 10px;
+    border:2px solid white;
 }
+
+.btn-custom:hover{
+	background-color: white;
+	color: black;
+}
+
+
     
 </style>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

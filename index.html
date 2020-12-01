@@ -10,7 +10,7 @@
     <script src = " https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js ">  </script>
     <script src="script.js"></script>
 </head>
-<body class="grad" onload="axiosStart()">
+<body id="body" class="grad" onload="axiosStart()">
 
     <div class="wrapper">
         <div class="container-fluid">
@@ -102,63 +102,7 @@
                         </div>
                     </div> -->
                     
-                    <div id="dmc" class="modal fade">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title">Devil May Cry 5</h2>
-                                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"><!--Inicio Carousel-->
-
-                                        <ol class="carousel-indicators"><!--Inicio indicadores-->
-                                          <li class="active" data-target="#carousel-indicadores" data-slide-to="0"></li>
-                                          <li data-target="#carousel-indicadores" data-slide-to="1"></li>
-                                          <li data-target="#carousel-indicadores" data-slide-to="2"></li>
-                                          <li data-target="#carousel-indicadores" data-slide-to="3"></li>
-                                        </ol><!--Fim indicadores-->
-                            
-                                        <div class="carousel-inner"><!--Inicio Inner-->
-                                          <div class="carousel-item active">
-                                            <iframe width="100%" height="500rem" src="https://www.youtube.com/embed/mF3dN6fOJTo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="https://xboxpower-wp.s3.amazonaws.com/wp-content/uploads/2019/03/04123048/Devil-May-Cry-5-analise.jpg" class="img-fluid">
-                                          </div>
-                            
-                                          <div class="carousel-item">
-                                            <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2019/03/devil-may-cry-5-review-1210x540.png" class="img-fluid">
-                                          </div>
-                            
-                                          <div class="carousel-item">
-                                            <img src="https://manualdosgames.com/wp-content/uploads/2018/08/devil-may-cry-5-3840x2160-nero-4k-14497.jpg" class="img-fluid">
-                                          </div>
-                                        </div><!--Fim Inner-->
-                            
-                                        <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev"><!--Inicio Controles-->
-                                          <span class="carousel-control-prev-icon"></span>
-                                        </a>
-                            
-                                        <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
-                                          <span class="carousel-control-next-icon"></span>
-                                        </a><!--Fim Controles-->
-                            
-                                      </div><!--Fim Carousel-->
-                                </div>
-                                <div class="modal-body">
-                                    <p class="mb-0"><span class="font-weight-bold">Data de Lançamento: </span>8 de março de 2019 </p>
-                                    <hr class="bg-light">
-                                    <p class="mb-0"><span class="font-weight-bold">Genero: </span>ação-aventura hack and slash </p>
-                                    <hr class="bg-light">
-                                    <p class="mb-0"><span class="font-weight-bold">Descrição: </span>  Devil May Cry 5 é um jogo eletrônico de ação-aventura hack and slash que conta com o retorno de Dante e Nero como personagens jogáveis, junto com um novo personagem, chamado "V". </p>
-                                    <hr class="bg-light">
-                                    <p><span class="font-weight-bold">Enredo: </span>A história se passa cinco anos após os eventos de Devil May Cry 4, com Nero montando sua própria agência de caça a demônios baseada em uma van adornada com um letreiro em neon de "Devil May Cry" que Dante deu a ele com apoio de Kyrie e sua engenheira, Nico. Mas em 30 de abril, Nero encontra um demônio agonizando que arranca seu braço, Devil Bringer e o transforma no Devil Arm Yamato para abrir um portal para escapar.</p>
-                            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             
@@ -184,9 +128,10 @@
            console.log(err)
        })
 
-       console.log(ax)
+       //console.log(ax)
 
        criaCard(ax.data)
+
        
     }
 </script>
